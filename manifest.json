@@ -3,12 +3,12 @@
     "name": "Calculator",
     "icons": [
       {
-        "src": "/images/icons-256.png",
+        "src": "/calculator/images/icons-256.png",
         "type": "image/png",
         "sizes": "256x256"
       },
       {
-        "src": "/images/icons-512.png",
+        "src": "/calculator/images/icons-512.png",
         "type": "image/png",
         "sizes": "512x512"
       }
