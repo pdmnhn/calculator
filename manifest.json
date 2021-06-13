@@ -16,7 +16,7 @@
     "start_url": "/calculator",
     "background_color": "#ffffff",
     "display": "fullscreen",
-    "orientation": "potrait",
+    "orientation": "portrait",
     "scope": "/",
     "theme_color": "#000000",
     "description": "A simple calculator"
