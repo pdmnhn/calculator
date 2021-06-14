@@ -4,9 +4,6 @@ let filesToCache = [
   "/calculator/", // 👈 your repository name , both slash are important
   "service-worker.js",
   "script.js",
-  "js/main.js",
-  "js/install-handler.js",
-  "js/settings.js",
   "styles.css",
   "images/icons-256.png",
   "images/icons-512.png",
