@@ -173,7 +173,7 @@ window.addEventListener("appinstalled", (event) => {
 
 /* Only register a service worker if it's supported */
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("calculator/service-worker.js");
+  navigator.serviceWorker.register("/service-worker.js");
 }
 
 /**
