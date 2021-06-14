@@ -58,9 +58,9 @@ function multiplyAndDivde() {
       }
       problem.splice(i, 2);
       if (op === "×") {
-        problem[i - 1] = Number(prevElement) * Number(nextElement);
+        problem[i - 1] = String(Number(prevElement) * Number(nextElement));
       } else if (op === "÷") {
-        problem[i - 1] = Number(prevElement) / Number(nextElement);
+        problem[i - 1] = String(Number(prevElement) / Number(nextElement));
       }
     }
     i++;
@@ -82,9 +82,9 @@ function addAndSubtract() {
       }
       problem.splice(i, 2);
       if (op === "+") {
-        problem[i - 1] = Number(prevElement) + Number(nextElement);
+        problem[i - 1] = String(Number(prevElement) + Number(nextElement));
       } else if (op === "-") {
-        problem[i - 1] = Number(prevElement) - Number(nextElement);
+        problem[i - 1] = String(Number(prevElement) - Number(nextElement));
       }
     }
     i++;
