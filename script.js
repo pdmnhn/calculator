@@ -136,6 +136,11 @@ calc.addEventListener("click", function (element) {
 const divInstall = document.getElementById("installContainer");
 const butInstall = document.getElementById("butInstall");
 
+/* Only register a service worker if it's supported */
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("./service-worker.js");
+}
+
 /* Put code here */
 
 window.addEventListener("beforeinstallprompt", (event) => {
@@ -170,11 +175,6 @@ window.addEventListener("appinstalled", (event) => {
   // Clear the deferredPrompt so it can be garbage collected
   window.deferredPrompt = null;
 });
-
-/* Only register a service worker if it's supported */
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("./service-worker.js");
-}
 
 /**
  * Warn the page must be served over HTTPS
