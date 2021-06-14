@@ -8,6 +8,7 @@ let filesToCache = [
   "images/icons-256.png",
   "images/icons-512.png",
   "manifest.json",
+  "images/favicon.ico",
   // add your assets here
   // ❗️❕donot add config.json here ❗️❕
 ];
