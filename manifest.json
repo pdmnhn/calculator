@@ -13,11 +13,11 @@
         "sizes": "512x512"
       }
     ],
-    "start_url": "/calculator/",
+    "start_url": "./", 
+    "scope": ".",
     "background_color": "#ffffff",
     "display": "standalone",
     "orientation": "portrait",
-    "scope": "/",
     "theme_color": "#000000",
     "description": "A simple calculator"
   }
