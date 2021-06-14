@@ -7,7 +7,7 @@
      content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' >
     <link rel="icon" href="images/favicon.ico"/>
     <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="./styles.css"/>
+    <link rel="stylesheet" href="/styles.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <title>Calculator</title>
@@ -33,13 +33,16 @@
         <div class="number zero button">0</div>
         <div class="operation button">=</div>
     </div>
-    <script src="./script.js"></script>
-    <script>
-        if ('serviceWorker' in navigator) {
-          window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/calculator/service-worker.js');
-          });
-        }
-        </script>
+    <p id="requireHTTPS" class="hidden">
+      <b>STOP!</b> This page <b>must</b> be served over HTTPS.
+      Please <a>reload this page via HTTPS</a>.
+    </p>
+    <!-- Install button, hidden by default -->
+    <div id="installContainer" class="hidden">
+      <button id="butInstall" type="button">
+        Install
+      </button>
+    </div>
+    <script src="/script.js" defer></script>
 </body>
 </html>
